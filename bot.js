@@ -183,6 +183,15 @@ client.on("message", message => { //clear
        
 });
 
-
+client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`skran`);
+        console.log(`---------------`);
+      console.log(`ON ${client.guilds.size} Servers `);
+    console.log(`---------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setGame(`*bc | From Omaaar To Yousef Bot Broad 24hours`,"http://twitch.tv/y04zgamer")
+   client.user.setStatus("dnd")
+});
 
 client.login(process.env.BOT_TOKEN);
